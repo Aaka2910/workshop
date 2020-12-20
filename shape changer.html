@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body style="background-color: #5e80ac;">
+    <div style="width: 1000px; height: 600px; margin: auto;  background-color: rgb(139, 204, 241);border-style: solid; border-width: 5px; border-radius: 49px;">
+        <h2 div id="heading" style=" font-size: 20px; border-radius: 135px; height: 80px; text-align: center; margin-top: 0px; color: floralwhite; font-size: 40px; padding-top: 10px; background-color: seagreen; color: rgb(255, 124, 124);">
+            Shape changer
+        </h2>
+        <div id="shape" style="height: 100px; width: 200px; background-color: rgb(0, 0, 0); border-color: darkgreen; border-style: solid; border-width: 5px; margin: auto;"></div>
+        <button onclick="rect()" style="display: flex; font-size: 15px; font-weight: bold; color: rgb(2, 78, 71); margin: auto;padding:10px 20px; border-radius: 20px; margin-top: 5px; background-color: rgb(252, 102, 102);">Rectangle</button>
+        <button onclick="square()" style="display: flex; font-size: 15px; font-weight: bold; color: rgb(2, 78, 71); margin: auto;padding:10px 20px; border-radius: 20px; margin-top: 5px; background-color: yellow;">Square</button>
+        <button onclick="circle()" style="display: flex; font-size: 15px; font-weight: bold; color: rgb(2, 78, 71); margin: auto;padding:10px 20px; border-radius: 20px; margin-top: 5px; background-color: green;">Circle</button>
+    </div>
+    
+</body>
+<script>
+function rect()
+    {
+        document.getElementById("shape").style["width"] = '300px';
+        document.getElementById("shape").style["height"] = '100px';    
+        document.getElementById("shape").style["border-color"] = 'red';    
+    }
+function square()
+    {
+        document.getElementById("shape").style["width"] = '100px';
+        document.getElementById("shape").style["height"] = '100px';    
+        document.getElementById("shape").style["border-color"] = 'yellow';    
+    }
+ function circle()
+    {
+        document.getElementById("shape").style["width"] = '100px';
+        document.getElementById("shape").style["height"] = '100px';    
+        document.getElementById("shape").style["border-color"] = 'green';    
+        document.getElementById("shape").style["border-radius"] = '50%';    
+    }
+    
+</script>
